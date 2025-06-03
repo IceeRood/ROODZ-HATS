@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Roodz Hats</title>
+  <style>
+    .section-button {
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .ocultar {
+      display: none;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    td, th {
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #888;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .precio {
+      display: block;
+      margin-top: 5px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body bgcolor="white">
+
+  <div style="text-align: center;">
+
+    <table border=".8">
+      <tr>
+        <th><button class="section-button" onclick="mostrarSeccion('drops')">Drops</button></th>
+        <th><button class="section-button" onclick="mostrarSeccion('mas')">Más Vendidos</button></th>
+<th><button class="section-button" onclick="mostrarSeccion('lecturas')">Lecturas</button></th>
+      </tr>
+    </table>
+  </div>
+
+  <div id="general">
+    <table>
+      <colgroup span="3" width="400"></colgroup>
+      <tr>
+        <td>ANGEL AZUL - DH X JH<br><img src="paginaweb/imagen1.webp"><span class="precio">$2,800</span></td>
+        <td>D RED - DH X FR<br><img src="paginaweb/imagen5.jpg"><span class="precio">$1,600</span></td>
+        <td>DANDY HATS<br><img src="paginaweb/imagen9.jpg"></td>
+      </tr>
+      <tr>
+        <td>CRYSTALS - DH X FR<br><img src="paginaweb/imagen2.png"><span class="precio">$7,200</span></td>
+        <td>TRIPLE BLACK DIAMOND - DH<br><img src="paginaweb/imagen6.webp"><span class="precio">$4,500</span></td>
+        <td>JC HATS<br><img src="paginaweb/imagen10.png"></td>
+      </tr>
+      <tr>
+        <td>EL BUHO - BH X LR<br><img src="paginaweb/imagen3.jpg"><span class="precio">$2,000</span></td>
+        <td>BEAR SCOTT - BH<br><img src="paginaweb/imagen7.jpg"><span class="precio">$1,600</span></td>
+        <td>BARBAS HATS<br><img src="paginaweb/imagen11.png"></td>
+      </tr>
+      <tr>
+        <td>FRESON DROP 2023<br><img src="paginaweb/imagen8.jpg"><span class="precio">$1,200</span></td>
+        <td>FRESON RED<br><img src="paginaweb/imagen4.jpg"><span class="precio">$1,200</span></td>
+        <td>THIRTY ONE HATS<br><img src="paginaweb/imagen12.jpg"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="drops" class="ocultar">
+    <h2 style="text-align:center;">🧢 Drops disponibles</h2>
+    <table>
+      <tr>
+        <td>LH Chrome<br><img src="drops/drop1.jpg"><span class="precio">$4,500</span></td>
+        <td>10 Years Anniversary<br><img src="drops/drop2.jpg"><span class="precio">$3,500</span></td>
+        <td>D.O.E<br><img src="drops/drop3.jpg"><span class="precio">$5,000</span></td>
+            <tr>
+            <td>Pacas De Billetes<br><img src="drops/drop4.jpg"><span class="precio">$1,500</span></td>
+        <td>Bussiness Black Red<br><img src="drops/drop5.png"><span class="precio">$800</span></td>
+        <td>B Chrome<br><img src="drops/droo6.jpg"><span class="precio">$15,000</span></td>
+            </tr>
+            <tr>         
+                  <td>LR Chrome<br><img src="drops/drop7.jpg"><span class="precio">$8,000</span></td>
+        <td>Grandes Ligas Black<br><img src="drops/drop8.webp"><span class="precio">$550</span></td>
+        <td>La Vida Recia<br><img src="drops/drop9.jpg"><span class="precio">$775</span></td>
+            </tr>           
+      </tr>
+    </table>
+    <div style="text-align:center;">
+      <button class="section-button" onclick="mostrarSeccion('general')">Volver al inicio</button>
+    </div>
+  </div>
+
+  <div id="mas" class="ocultar">
+    <h2 style="text-align:center;">🔥 Más vendidos</h2>
+    <table>
+      <tr>
+        <td>Crystals<br><img src="masvendidos/mas1.jpg"><span class="precio">$7,200</span></td>
+        <td>NY 4EVER<br><img src="masvendidos/mas2.webp"><span class="precio">$3,000</span></td>
+        <td>Glorius Green<br><img src="masvendidos/mas3.jpg"><span class="precio">$3,500</span></td>
+      </tr>
+          <tr>
+        <td>Tumbado Life Azul<br><img src="masvendidos/mas4.jpg"><span class="precio">$900</span></td>
+        <td>Kevin AMF Camel<br><img src="masvendidos/mas5.jpg"><span class="precio">$1,200</span></td>
+        <td>Chrome Rose Gold<br><img src="masvendidos/mas6.jpg"><span class="precio">$14,000</span></td>
+      </tr>
+                    <tr>
+        <td>77 Total Black<br><img src="masvendidos/mas7.jpg"><span class="precio">$3,100</span></td>
+        <td>La Suerte Crystal<br><img src="masvendidos/mas8.webp"><span class="precio">$775</span></td>
+        <td>Diamonds Black<br><img src="masvendidos/mas9.jpg"><span class="precio">$420</span></td>
+      </tr>
+    </table>
+    <div style="text-align:center;">
+      <button class="section-button" onclick="mostrarSeccion('general')">Volver al inicio</button>
+    </div>
+  </div>
+
+<div id="lecturas" class="ocultar" style="background-color: #C8A2C8; padding: 20px; border-radius: 10px;">
+  <h2 style="text-align:center; color: white; font-family: sans-serif;">📚 Lecturas</h2>
+  <table style="margin: 0 auto; border-collapse: collapse; width: 90%; max-width: 600px;">
+    <tbody>
+      <tr>
+        <td style="padding: 8px; color: white;">EL MARAVILLOSO MAGO DE OZ</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">ANA FRANK</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">UN GRAN ARQUITECTO: FRANK LLOYD WRIGHT</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">LLEGANDO A LA CIUDAD ESMERALADA</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">PERDIDO</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">LA HEROÍNA DE DOIS RIACHOS</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">UN GRAN MÚSICO: LUDWIG VAN BEETHOVEN</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">DISCURSO DE MALALA YOUSAFZAI</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">HISTORIA DE ABDULA, EL MENDIGO CIEGO</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; color: white;">EL CORAZÓN DELATOR</td>
+        <td><a href="cuerpo.html"><button class="section-button" style="font-size: 12px; padding: 4px 10px;">Leer</button></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="text-align:center; margin-top: 15px;">
+    <button class="section-button" style="background-color: white; color: #C8A2C8; font-size: 14px; padding: 6px 14px;" onclick="mostrarSeccion('general')">Volver al inicio</button>
+  </div>
+</div>
+
+  <script>
+  function mostrarSeccion(id) {
+    const secciones = ['general', 'drops', 'mas', 'lecturas'];
+    secciones.forEach(sec => {
+      document.getElementById(sec).classList.add('ocultar');
+    });
+    document.getElementById(id).classList.remove('ocultar');
+  }
+</script>
+
+</body>
+</html>
